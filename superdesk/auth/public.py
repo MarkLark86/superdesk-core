@@ -22,12 +22,12 @@ class PublicAuth(BasicAuth):
     To use this method, set ``SAMS_AUTH_TYPE`` to ``'sams.auth.public'`` in your settings.py
     """
 
-    async def check_auth(self, username, password, allowed_roles, resource, method):
+    def check_auth(self, username, password, allowed_roles, resource, method):
         """"""
 
         return True
 
-    async def authorized(self, allowed_roles, resource, method):
+    def authorized(self, allowed_roles, resource, method):
         """"""
 
         return True
