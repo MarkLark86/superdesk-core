@@ -20,7 +20,7 @@ import superdesk
 import logging
 
 from flask_mail import Mail
-from eve.auth import TokenAuth
+from superdesk.auth.public import PublicAuth
 from eve.io.mongo.mongo import _create_index as create_index
 from eve.io.media import MediaStorage
 from eve.render import send_response
@@ -190,7 +190,7 @@ def get_app(config=None, media_storage=None, config_object=None, init_elastic=No
 
     app = SuperdeskEve(
         data=SuperdeskDataLayer,
-        auth=TokenAuth,
+        auth=PublicAuth,
         media=media_storage,
         settings=app_config,
         json_encoder=SuperdeskJSONEncoder,
