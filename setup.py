@@ -17,7 +17,7 @@ install_requires = [
     "eve>=1.1.2,<=2.1.0",
     "eve-elastic>=7.4.0,<7.5.0",
     "elasticsearch[async]<7.18",  # we are using oss version on test server
-    "flask>=3.0",
+    "flask[async]>=3.0",
     "flask-mail>=0.9,<0.11",
     "flask-babel>=1.0,<4.1",
     "arrow>=0.4,<=1.3.0",
@@ -38,7 +38,7 @@ install_requires = [
     "raven[flask]>=5.10,<7.0",
     "requests>=2.7.0,<3.0",
     "boto3>=1.26,<2.0",
-    "websockets>=10.3,<10.4",
+    "websockets>=12.0,<13.0",
     "PyYAML>=6.0.1",
     "lxml>=5.2.2,<5.3",
     "lxml_html_clean>=0.1.1,<0.2",
